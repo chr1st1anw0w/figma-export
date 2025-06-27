@@ -1,0 +1,45 @@
+{
+  "figma": {
+    "token": "YOUR_FIGMA_TOKEN_HERE",
+    "email": "your-email@example.com",
+    "password": "YOUR_FIGMA_PASSWORD"
+  },
+  "backup": {
+    "mode": "project",
+    "targets": [
+      "https://www.figma.com/files/YOUR_PROJECT_ID/project/YOUR_PROJECT_ID"
+    ],
+    "outputDir": "./figma-backups",
+    "createTimestampFolder": true,
+    "autoOpenFolder": true,
+    "output_dir": "./figma-backups",
+    "create_timestamp_folder": true
+  },
+  "dropbox": {
+    "token": "YOUR_DROPBOX_TOKEN_HERE",
+    "app_folder": "/figma-backups",
+    "enabled": false
+  },
+  "notion": {
+    "token": "YOUR_NOTION_TOKEN_HERE",
+    "database_id": "YOUR_NOTION_DATABASE_ID",
+    "enabled": false
+  },
+  "obsidian": {
+    "vault_path": "/path/to/your/obsidian/vault",
+    "enabled": false
+  },
+  "advanced": {
+    "concurrency": 3,
+    "retryAttempts": 3,
+    "timeout": 30000,
+    "validateBackup": true,
+    "logLevel": "info"
+  },
+  "notifications": {
+    "onStart": true,
+    "onComplete": true,
+    "onError": true,
+    "sound": true
+  }
+}
